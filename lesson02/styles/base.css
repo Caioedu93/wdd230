@@ -16,14 +16,13 @@ body {
   background-color: #fff;
 }  
 
-header h1,p1{
+header h1{
   color: #ffffff;
 }
 
 
 .card h2 {
   margin: 0%;
-  box-sizing: border-box solid ;
   background-color: #faf0ca;
 }
 
