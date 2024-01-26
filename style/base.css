@@ -67,7 +67,9 @@ main {
 section ul {
     list-style-type: none;
 }
-
+#menu {
+    display: none; /* hide hamburger button */
+}
 
 
 footer {
