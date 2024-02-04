@@ -20,6 +20,9 @@ header {
     margin-bottom: 10px;
     font-size: x-large;
 }
+#hero-image{
+    width: 100%; 
+}
 
 footer{
     background-color:#ebf4f5 ;

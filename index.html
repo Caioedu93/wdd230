@@ -25,7 +25,7 @@
 <body>
     <header>
         <h1>
-            <img src="images/profile.jpeg" alt="Caio Eduardo J. de Paula">Caio Eduardo J. de Paula
+            <img src="images/profile.jpeg" width="250" height="250" alt="Caio Edudardo">Caio Eduardo J. de Paula
         </h1>
     </header>
 
@@ -37,7 +37,7 @@
         <ul id="menu">
             <li><a href=https://caioedu93.github.io/wdd230>Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Chamber</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
         </ul>
@@ -63,6 +63,9 @@
         </section>
         <section class="card">
             <h3>Information</h3>
+            <p>Number of visits: <span id="visits"></span></p>
+            <div id="weatherapi-weather-widget-5"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=272189&wid=5&tu=1&div=weatherapi-weather-widget-5' async></script><noscript><a href="https://www.weatherapi.com/weather/q/embu-guacu-272189" alt="Hour by hour Embu-Guacu weather">10 day hour by hour Embu-Guacu weather</a></noscript>
+        </div>
             <iframe
                 src="https://www.google.com.br/maps/place/R.+do+Cedro,+120+-+Jardim+da+Represa+do+Cipo,+Embu-Gua%C3%A7u+-+SP,+06900-000/@-23.8813707,-46.7801385,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce3599d2447983:0x9306199353ceb117!8m2!3d-23.8813707!4d-46.7775636?entry=ttu"
                 width="1180" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -70,13 +73,13 @@
     </main>
     <footer>
         <p>:
-        <h1><img src="images/OIP.jpg" alt="Brasil"></h1>
+        <h1><img src="images/OIP.jpg" width="100" height="70" alt="Brasil"></h1>
         <p id="lastModified"></p>
     </footer>
 
     <script src="script/getdates.js"></script>
     <script src="script/menu.js"></script>
-
+    <script src="script/getvisitors.js"></script>
 </body>
 
 </html>
