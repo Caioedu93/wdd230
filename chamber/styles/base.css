@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');
+
   
 :root {
     /* change the values below to your colors from your palette */
@@ -32,13 +32,8 @@ body {
     margin: 0;
     padding: 0;
 }
-#hero-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+#hero-image{
+    object-fit: cover;
 }
 
 
@@ -74,8 +69,8 @@ header {
     grid-template-rows: 20fr auto;
     margin-left: 250px ;
     margin-right: 200px ;
-    width: 60%;
-    justify-content: center; 
+    width: 65%;
+    justify-content: center ;
 }
 
 .event1{
