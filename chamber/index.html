@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,10 +21,16 @@
 <style>@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');</style>
 
 <body>
+
     <header>
         <h1>Embu Guaçu Chamber of Commerce.</h1>
         <p>Building a Stronger Community</p>
         <nav>
+            
+            <div id="hamburger">
+                <span id="indicator">&#8801;</span>
+            </div>
+    
             <ul id="menu">
                 <li><a href="https://caioedu93.github.io/wdd230/chamber/index.html">Home</a></li>
                 <li><a href="../lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -34,10 +40,11 @@
             </ul>
         </nav>
     </header>
-    <nav>
-        <!-- Navigation Content -->
-    </nav>
+    
     <main>
+        <div id="dark-mode-toggle">
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
         <!-- Hero Image -->
         <div id="hero-image">
             <img src="images/hero-image.webp" alt="Embu guaçu" width="100%" height="550px">
@@ -55,21 +62,21 @@
         <div id="current-events">
 
             <section class="event1">
-                <img src="images/feira-art.webp" alt="feira de arte" width="300" height="500">
-                <h1>Handicraft Fair in the Cipó District🤩</h1>
+                <img src="images/feira-art.webp" alt="feira de arte" width="300" height="300">
+                <h2>Handicraft Fair in the Cipó District🤩</h2>
             </section>
             <section class="event2">
-                <img src="images/futsal.webp" alt="Campeonato de futsal" width="300" height="500">
-                <h1>Industry and Commerce Futsal Championship!1d
-                    🏆⚽ </h1>
+                <img src="images/futsal.webp" alt="Campeonato de futsal" width="300" height="300">
+                <h2>Industry and Commerce Futsal Championship!1d
+                    🏆⚽ </h2>
             </section>
             <section class="event3">
-                <img src="images/iphone.webp" alt="troque seu celular" width="300" height="500">
-                <h1>There are 30 days left until the draw for the "YOUR RECYCLABLE IS WORTH AN IPHONE" project.📢</h1>
+                <img src="images/iphone.webp" alt="troque seu celular" width="300" height="300">
+                <h2>There are 30 days left until the draw for the "YOUR RECYCLABLE IS WORTH AN IPHONE" project.📢</h2>
             </section>
             <section class="event4">
-                <img src="images/atividades.webp" alt="social" width="300" height="500">
-                <h1> CCP's social activities in our municipality🎉</h1>
+                <img src="images/atividades.webp" alt="social" width="300" height="300">
+                <h2> CCP's social activities in our municipality🎉</h2>
             </section>
         </div>
         <!-- Weather Card Section -->
@@ -112,6 +119,8 @@
         document.getElementById('last-modified').textContent = new Date().toLocaleDateString();
     </script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    
 </body>
 
 </html>
