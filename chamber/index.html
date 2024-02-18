@@ -17,10 +17,11 @@
     <meta property="og:image" content="https://caioedu93.github.io/wdd230/chamber/images/meta-image.jpeg">
     <meta property="og:url" content="https://caioedu93.github.io/wdd230/chamber/index.html">
     <meta name="twitter:card" content="summary_large_image">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');</style>
 </head>
-<style>@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');</style>
 
 <body>
+
 
     <header>
         <h1>Embu Guaçu Chamber of Commerce.</h1>
@@ -47,7 +48,14 @@
         </div>
         <!-- Hero Image -->
         <div id="hero-image">
-            <img src="images/hero-image.webp" alt="Embu guaçu" width="100%" height="550px">
+                <img src="images/wdd230-org.webp" alt="Embu guaçu" 
+                     srcset="images/wdd230-org-small.webp 480w, 
+                             images/wdd230-org-medium.webp 768w, 
+                             images/wdd230-org.webp 1200w" 
+                     sizes="(max-width: 480px) 100vw, 
+                            (max-width: 768px) 100vw, 
+                            1200px" width="100%" height="400"> 
+                <!--<img src="images/hero-image.webp" alt="Embu guaçu" width="100%" height="550px"> -->
         </div>
         <!-- Call to Action -->
         <div id="cta">
@@ -83,9 +91,22 @@
         <h3>Weather</h3>
         <div id="weatherapi-weather-widget-4"></div>
         <script type='text/javascript'
-            src='https://www.weatherapi.com/weather/widget.ashx?loc=272189&wid=4&tu=1&div=weatherapi-weather-widget-4'
-            async></script><noscript><a href="https://www.weatherapi.com/weather/q/embu-guacu-272189"
+                src='https://www.weatherapi.com/weather/widget.ashx?loc=272189&wid=4&tu=1&div=weatherapi-weather-widget-4'
+                async></script><noscript><a href="https://www.weatherapi.com/weather/q/embu-guacu-272189"
                 alt="Hour by hour Embu-Guacu weather">10 day hour by hour Embu-Guacu weather</a></noscript>
+
+                <h3>Wind Chill Calculator</h3>
+                <form id="windchill-form">
+                    <label for="temperature">Temperature (°F):</label>
+                    <input type="number" id="temperature" name="temperature" required>
+                    <br>
+                    <label for="windspeed">Wind Speed (mph):</label>
+                    <input type="number" id="windspeed" name="windspeed" required>
+                    <br>
+                    <button type="submit">Calculate Wind Chill</button>
+                </form>
+
+                <div id="result"></div>
         <!-- Company Spotlights Section -->
         <h3>Companies</h3>
         <div id="company-spotlights">
@@ -120,6 +141,8 @@
     </script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/windchill.js"></script>
+
     
 </body>
 
