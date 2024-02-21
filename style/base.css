@@ -13,18 +13,33 @@ body {
 header {
     text-align: center;
     background-color: #6d0e0e;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border: 8px solid rgba(24, 13, 13, 0.75);
     color: #fff;
     padding: 20px;
     margin-bottom: 10px;
     font-size: x-large;
-
 }
 
 header img {
     border-radius: 5%;
     max-width: 250px;
+    box-shadow: #4936b2;
+    border-style:inset;
 
 }
+
+#menu li{
+    border: 2px solid;
+    border-radius: 15%;
+    border-color: #241313;
+    transition-property: background-color;
+    transition-duration: 2s;
+  }
+  #menu li:hover {
+    background-color: #6d0e0e;
+  }
 
 .hero {
 	margin: 10px auto;
@@ -36,13 +51,12 @@ header img {
   
 .hero img {
     width: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
   
 .overlay { 
 	position: absolute;
-	top: 450px;
+	top: 550px;;
 	left: 190px;
 	background: radial-gradient(#4936b2, #4053a6);
 	border: 1px solid rgb(154 154 169 / 75%);
@@ -104,6 +118,19 @@ main {
 section ul {
     list-style-type: none;
 }
+
+.card a  {
+    width: 100px;
+    height: 100px;
+    transition-property: width, height, font-size;
+    transition-duration: 2s, 3s, 4s;
+  }
+  .card a:hover {
+    width: 400px;
+    height: 400px;
+    color: #6d0e0e;
+    font-size: x-large;
+  }
 
 #hamburger {
     display: none; /* Hide by default on larger screens */
