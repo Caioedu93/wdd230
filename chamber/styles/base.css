@@ -2,17 +2,15 @@
 
   
 :root {
-    /* change the values below to your colors from your palette */
     --primary-color:  #b5c6e0  ;
     --secondary-color:#ebf4f5 ;
     --accent1-color: black;
     --accent2-color: white;
   
-    /* change the values below to your chosen font(s) */
     --heading-font: 'Rubik Doodle Shadow', system-ui;
     --paragraph-font: 'Roboto', sans-serif;
   
-    /* these colors below should be chosen from among your palette colors above */
+    
     --headline-color-on-white: black ;  /* headlines on a white background */ 
     --headline-color-on-color: black; /* headlines on a colored background */ 
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
@@ -41,7 +39,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px; /* Adjust this value as needed */
+    margin-top: 50px; 
 }
 
 #windchill-form label,
@@ -179,14 +177,71 @@ li a{
 }
 
 #hamburger {
-    display: none; /* Hide by default on larger screens */
+    display: none; 
     font-size: 24px;
     cursor: pointer;
 }
 
-footer{
-    background-color:#ebf4f5 ;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .sidebar-content {
+    margin-bottom: 20px;
+  }
+  
+.sidebar-content li a{
+    margin-bottom: 10%;
 }
+
+  .last-visit {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 0;
+    margin-right: 2%;
+  }
+  
+  .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 1/1; 
+  }
+  
+  .lazy-load.loaded {
+    opacity: 1;
+  }
+  
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+
+footer{
+    background-color:#ebf4f5;
+}
+
 
 main {
 	margin: 0;
@@ -214,8 +269,8 @@ main img {
 }
 
 body.dark-mode {
-    color: #fff; /* Text color */
-    background-color: #333; /* Background color */
+    color: #fff; 
+    background-color: #333; 
 }
 
 
@@ -224,19 +279,19 @@ body.dark-mode {
         display: block;
         font-size: 24px;
         cursor: pointer;
-        transition: color 0.3s; /* Add smooth transition for color change */
+        transition: color 0.3s; 
     }
     #hamburger.open #indicator::after {
-        content: '✖'; /* Unicode for X symbol */
+        content: '✖'; 
     }
     
 
 
     #indicator::before {
-        content: ''; /* Unicode for hamburger icon */
+        content: ''; 
         display: inline-block;
         margin-right: 5px;
-        transition: transform 0.3s; /* Add smooth transition */
+        transition: transform 0.3s; 
     }
 
     #hamburger.open #indicator::before {
@@ -261,15 +316,15 @@ body.dark-mode {
     }
     #wayfinding-line {
         height: 2px;
-        width: 30px; /* Adjust the length of the wayfinding line as needed */
-        background-color: #fff; /* Adjust the color as needed */
-        margin-top: 5px; /* Adjust the spacing as needed */
-        transition: opacity 0.3s; /* Add smooth transition for opacity change */
-        opacity: 0; /* Start with 0 opacity when the menu is closed */
+        width: 30px; 
+        background-color: #fff; 
+        margin-top: 5px;
+        transition: opacity 0.3s; 
+        opacity: 0; 
     }
     
     #hamburger.open + #wayfinding-line {
-        opacity: 1; /* Make the wayfinding line visible when the menu is open */
+        opacity: 1; 
     }
     
     body {

@@ -54,15 +54,15 @@ header img {
   
 .overlay { 
     position: absolute;
-    top: 550px; /* Adjust vertical position */
-    left: 300px; /* Adjust horizontal position */
-    transform: translate(-50%, -50%); /* Center the overlay */
+    top: 550px; 
+    left: 300px; 
+    transform: translate(-50%, -50%); 
     background: radial-gradient(#4936b2, #4053a6);
     border: 1px solid rgba(154, 154, 169, 0.75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
-    max-width: 80%; /* Limit overlay width */
+    max-width: 80%; 
 }
 
 .overlay p {
@@ -71,7 +71,7 @@ header img {
     font-weight: 700;
     font-size: 1.5rem;
     font-family: "Great Vibes", serif;
-    color: #fff; /* Ensure text is visible */
+    color: #fff; 
 }
 
 
@@ -133,7 +133,7 @@ section ul {
   }
 
 #hamburger {
-    display: none; /* Hide by default on larger screens */
+    display: none; 
     font-size: 24px;
     cursor: pointer;
 }
@@ -157,19 +157,19 @@ footer img {
         display: block;
         font-size: 24px;
         cursor: pointer;
-        transition: color 0.3s; /* Add smooth transition for color change */
+        transition: color 0.3s; 
     }
     #hamburger.open #indicator::after {
-        content: '✖'; /* Unicode for X symbol */
+        content: '✖'; 
     }
     
 
 
     #indicator::before {
-        content: ''; /* Unicode for hamburger icon */
+        content: ''; 
         display: inline-block;
         margin-right: 5px;
-        transition: transform 0.3s; /* Add smooth transition */
+        transition: transform 0.3s;
     }
 
     #hamburger.open #indicator::before {
@@ -194,15 +194,15 @@ footer img {
     }
     #wayfinding-line {
         height: 2px;
-        width: 30px; /* Adjust the length of the wayfinding line as needed */
-        background-color: #fff; /* Adjust the color as needed */
-        margin-top: 5px; /* Adjust the spacing as needed */
-        transition: opacity 0.3s; /* Add smooth transition for opacity change */
-        opacity: 0; /* Start with 0 opacity when the menu is closed */
+        width: 30px; 
+        background-color: #fff; 
+        margin-top: 5px; 
+        transition: opacity 0.3s;
+        opacity: 0; 
     }
     
     #hamburger.open + #wayfinding-line {
-        opacity: 1; /* Make the wayfinding line visible when the menu is open */
+        opacity: 1; 
     }
     
     header h2 {
@@ -215,8 +215,8 @@ footer img {
     }
 
     .overlay p {
-        top: 80%; /* Adjust vertical position for mobile */
-      max-width: 90%; /* Adjust max-width for mobile */
+        top: 80%; 
+      max-width: 90%;
       }
     
 
@@ -235,6 +235,6 @@ footer img {
     }
     iframe {
         width: 100%;
-        height: 300px; /* Adjust the height as needed */
+        height: 300px; 
     }
 }
