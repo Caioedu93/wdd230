@@ -331,7 +331,11 @@ body.dark-mode {
         font-size: 14px;
     }
 
-    
+    .container {
+        grid-template-columns: 1fr; /* Change to single column layout */
+      }
+    }
+
     #hero-image{
        width: 100%;
     }
