@@ -37,13 +37,29 @@
                 <input type="text" id="username" name="username" required></label>
             </div>
             <div>
-                <label for="password">Password:
-                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and contain only alphanumeric characters.">
             </div>
             <div>
-                <label for="confirm_password">Confirm Password:
-                <input type="password" id="confirm_password" name="confirm_password" required></label>
-            </div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required pattern="[A-Za-z0-9]{8,}" oninput="checkPasswordMatch(this)" title="Passwords must match">
+                <div id="password_match_error" style="color: red; display: none;">Passwords do not match</div>
+            </div><script>
+                function checkPasswordMatch(input) {
+                    var password = document.getElementById("password").value;
+                    var confirmPassword = input.value;
+                    var errorDiv = document.getElementById("password_match_error");
+            
+                    if (password === confirmPassword) {
+                        errorDiv.style.display = "none";
+                        input.setCustomValidity('');
+                    } else {
+                        errorDiv.style.display = "block";
+                        input.setCustomValidity('Passwords do not match');
+                    }
+                }
+            </script>
+         
             <div>
                 <label for="email">Email:
                 <input type="email" id="email" name="email" required pattern=".+@byui\.edu" title="A valid byui.edu email address."></label>
