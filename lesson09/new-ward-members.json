@@ -1,0 +1,31 @@
+
+{
+    "wardInformation": {
+    "familyName" : "de Paula",
+    "moveDate" : "2023-11-20",
+    "numberOfPeople" : 3,
+    "VisitedByBishopric" : true,
+    "IndividualFamilyMembers" : [
+        {
+            "name" : "Caio Eduardo Jesus de Paula" ,
+            "gender" : "male",
+            "birthDate" : "1993-12-15"
+        },
+        
+        {
+            "name" : "Stephanie Dias de Paula",
+            "gender" : "female",
+            "birthDate" : "1996-09-19"
+        },
+
+        {
+            "name" : "Victória Fernandes de Paula",
+            "gender" : "female",
+            "birthDate" : "2013-11-10"
+        }
+
+    ]
+
+      
+}
+}
