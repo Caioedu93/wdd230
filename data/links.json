@@ -1,0 +1,129 @@
+{"lessons" :[
+    {
+    "lesson" : "01",
+    "links" : [
+        {
+            "url":"lesson01/holygrail.html",
+            "title":"Holygrail"
+        }
+    ]
+    },
+    {
+    "lesson" : "02",
+    "links" : [
+        {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Priciples"
+        },
+        {
+            "url": "lesson02/design.html",
+            "title": "Design"
+        },
+        {
+            "url": "lesson02/media-query.html",
+            "title": "Media Query"
+        }
+    ]
+    },
+    {
+    "lesson" : "03",
+    "links" : [
+        {
+            "url" : "lesson03/chamber-site-plan.hmtl",
+            "title" : "Chamber Site-Plan"
+        },
+        {
+            "url": "./images/combinators.webp",
+            "title": "Combinator"
+        },
+        {
+            "url": "https://codepen.io/Caioedu93/pen/dyrZPaY",
+            "title": "Pseudo Elements"
+        },
+        {
+            "url": "https://codepen.io/Caioedu93/pen/OJqOVgv",
+            "title": "Responsive Menu"
+        }
+    ]    
+    },
+    {
+    "lesson" : "04",
+    "links" : [
+        {
+            "url" : "https://codepen.io/Caioedu93/pen/LYadYEG",
+            "title" : "Pseudo Classes"
+        }
+    ]
+    },
+    {
+    "lesson" : "05",
+    "links" : [
+        {
+            "url" : "lesson/bom.html",
+            "title" : "Bom"
+        }
+    ]
+    },
+    {
+    "lesson" : "06",
+    "links" : [
+        {
+            "url" : "lesson06/responsive-images.html",
+            "title" : "Responsive Images"
+        }
+    ]
+    },
+    {
+    "lesson" : "07",
+    "links" : [
+        {
+            "url" : "lesson07/bomw7.html",
+            "title" : "Web Storage API "
+        },
+        {
+            "url" : "lesson07/lazyload.html",
+            "title" : "Lazyload"
+        }
+    ]
+    },
+    {
+    "lesson" : "08",
+    "links" : [
+        {
+            "url" : "lesson08/index.html",
+            "title" : "Html Forms"
+        }, 
+        {
+            "url" : "lesson08/tablebuild.html",
+            "title" : "Html tables for data presentation"
+        },
+        {
+            "url" : "form.html",
+            "title" : "Form build"
+        } 
+    ]    
+    },
+    {
+    "lesson" : "09",
+    "links" : [
+        {
+            "url" : "lesson09/new-ward-members.json",
+            "title" : "Json"
+        },
+        {
+            "url" : "lesson09/prophets.html",
+            "title" : "Prophets"
+        }
+    ]
+    },
+    {
+    "lesson" : "10",
+    "links" : [
+        {
+            "url" : "",
+            "title" : ""
+        }
+    ]
+    }
+]
+}
