@@ -214,9 +214,10 @@ footer img {
         height: auto;
     }
 
-    .overlay p {
-        top: 80%; 
-      max-width: 90%;
+    .overlay  {
+        top: 135%; 
+        width: 40rem;
+        
       }
     
 

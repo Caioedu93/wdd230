@@ -1,38 +1,33 @@
-
-
 const baseURL = "https://caioedu93.github.io/wdd230/";
+const linksURL = "https://caioedu93.github.io/wdd230/data/links.json";
 
 async function getLinks() {
-  try {
-    const response = await fetch(baseURL + "data/links.json");
-    const data = await response.json();
-    displayLinks(data);
-  } catch (error) {
-    console.error("Error fetching links data:", error);
-  }
+  const response = await fetch(linksURL);
+  const data = await response.json();
+  return data;
 }
 
-function displayLinks(weeks) {
-  const linksContainer = document.getElementById("activity-links");
+async function displayLinks() {
+  const data = await getLinks();
+  const activityLinks = document.getElementById('activity-links');
 
-  weeks.forEach(week => {
-    const weekHeader = document.createElement("h3");
-    weekHeader.textContent = `Week ${week.lesson}`;
+  data.lessons.forEach(lesson => {
+      const lessonTitle = document.createElement('h4');
+      lessonTitle.textContent = `Week ${lesson.lesson}`;
+      activityLinks.appendChild(lessonTitle);
 
-    const linksList = document.createElement("ul");
+      const linksList = document.createElement('ul');
+      lesson.links.forEach(link => {
+          const listItem = document.createElement('li');
+          const linkElement = document.createElement('a');
+          linkElement.href = baseURL + link.url;
+          linkElement.textContent = link.title;
+          listItem.appendChild(linkElement);
+          linksList.appendChild(listItem);
+      });
 
-    week.links.forEach(link => {
-      const listItem = document.createElement("li");
-      const linkElement = document.createElement("a");
-      linkElement.href = baseURL + link.url;
-      linkElement.textContent = link.title;
-      listItem.appendChild(linkElement);
-      linksList.appendChild(listItem);
-    });
-
-    linksContainer.appendChild(weekHeader);
-    linksContainer.appendChild(linksList);
+      activityLinks.appendChild(linksList);
   });
 }
 
-getLinks();
+displayLinks();
