@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Ferreira Ferragens",
+        "address": "Estr. Inozume Kagohara 3100, Embu-Guaçu, SP",
+        "phone": "(11) 4663-2580",
+        "website": "https://www.bing.com/ck/a?!&&p=6a96d89c27e526a4JmltdHM9MTcwOTk0MjQwMCZpZ3VpZD0wZjkzN2M0ZC0zNWJjLTY3ZGMtMjdjOC02ODVjMzRjNTY2MWUmaW5zaWQ9NTIxMA&ptn=3&ver=2&hsh=3&fclid=0f937c4d-35bc-67dc-27c8-685c34c5661e&psq=ferreira+ferragens+embu+gua%c3%a7u&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2ZlcnJlaXJhLmZlcnJlcmFnZW5zLw&ntb=1",
+        "membershipLevel": "Gold",
+        "image": "../images/Ferreira.webp"
+
+        
+    },
+    {
+        "name": "Ayumi",
+        "address": "Av. Benedito Jandiro Soares 50, Embu-Guaçu, SP",
+        "phone": "(11) 4663-2159",
+        "website": "https://www.ayumi.com.br/lojas-ayumi/",
+        "membershipLevel": "Silver",
+        "image": "../images/ajumi-min.webp"
+
+        
+    },
+    {
+        "name": "União Química",
+        "address": "R Coronel Luiz Tenório de Brito 90, Embu-Guaçu, SP",
+        "phone": "(11) 4662-7200",
+        "website": "https://www.uniaoquimica.com.br/sobre-nos/institucional/unidades-fabris/embu-guacu-sp/",
+        "membershipLevel": "Silver",
+        "image": "../images/união.webp"
+
+        
+    },
+    {
+        "name": "Extra",
+        "address": "Rua Boa Vista 625, Embu-Guaçu, SP",
+        "phone": "(11) 4661-2417",
+        "website": "https://extra.com.br",
+        "membershipLevel": "Silver",
+        "image": "../images/extra.JPEG"
+
+        
+    },
+    {
+        "name": "Integral Médica",
+        "address": "rod jose simoes louro junior, nº 40.582. Embu guaçu, SP",
+        "phone": "(11) 3254-0454",
+        "website": "https://www.integralmedica.com.br/",
+        "membershipLevel": "Gold",
+        "image": "../images/LOGO_IM.png"
+
+        
+    },
+    {
+        "name": "Pajule",
+        "address":"R: DEIZE DA COSTA, 331, Embu-Guaçu, SP",
+        "phone": "(11) 4663-1661",
+        "website": "www.pajule.com.br",
+        "membershipLevel": "Bronze",
+        "image": "../images/pajule.jpg"
+
+        
+    },
+    {
+        "name": "Flash",
+        "address": "R Coronel Luiz Tenório de Brito, 752, Embu-Guaçu, SP",
+        "phone": "(11)91415-1013",
+        "website": "https://www.instagram.com/flashacademiaoficial/",
+        "membershipLevel": "Gold",
+        "image": "../images/flash.jpg"
+
+        
+    },
+    {
+        "name": "RMSP",
+        "address":"Rua Maria Dores Delfim 346, Embu-Guaçu, SP",
+        "phone": "(11) 4661-8959",
+        "website":"https://www.instagram.com/flashacademiaoficial/",
+        "membershipLevel": "Gold",
+        "image": "../images/rmsp.jpg"
+
+        
+    }
+    
+]

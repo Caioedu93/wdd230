@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embu Guaçu Chamber of commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="description" content="Know a little more and join to the Chamber of Commerce in Embu Guaçu.">
+    <meta name="author" content="Caio Eduardo">
+    <link rel="icon" href="favicon.ico">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Embu Guaçu, Chamber of commerce">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://caioedu93.github.io/wdd230/chamber/images/meta-image.jpeg">
+    <meta property="og:url" content="https://caioedu93.github.io/wdd230/chamber/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap');</style>
+</head>
+<body>
+    <header>
+        <h1>Embu Guaçu Chamber of Commerce</h1>
+        <p>Building a Stronger Community</p>
+        <nav>
+            <div id="hamburger">
+                <span id="indicator">&#8801;</span>
+            </div>
+            <ul id="menu">
+                <li><a href="https://caioedu93.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="../lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" target="_blank">Join</a></li>
+                <li><a href="discover.html" target="_blank">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container"></div>
+    <article class="grid" id="membersContainer"></article>
+    </main>
+    <footer>
+        <!--Footer Content -->
+        <p>Contact Information: depaulacaio10@gmail.com || Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('last-modified').textContent = new Date().toLocaleDateString();
+    </script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
