@@ -103,6 +103,8 @@ main {
 }
 
 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
     background-color: #ffffff;
     color: #a51919;
     margin-bottom: 20px;
@@ -113,6 +115,15 @@ main {
     margin-bottom: 10px;
     font-size: xx-large;
     text-align: center;
+    grid-column: span 3;
+}
+
+.weather {
+    grid-column: 2;
+}
+
+#activity-links{
+    grid-column: 2;
 }
 
 section ul {

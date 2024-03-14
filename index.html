@@ -64,11 +64,12 @@
         <section class="card">
             <h3>Information</h3>
             <p> <span id="visits"></span></p>
-            <div id="weatherapi-weather-widget-5"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=272189&wid=5&tu=1&div=weatherapi-weather-widget-5' async></script><noscript><a href="https://www.weatherapi.com/weather/q/embu-guacu-272189" alt="Hour by hour Embu-Guacu weather">10 day hour by hour Embu-Guacu weather</a></noscript>
-        </div>
-        <h3>map</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.2556897425516!2d-46.7807134249301!3d-23.88055027858179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce3599d2447983%3A0x82dde3d6b768c004!2sR.%20do%20Cedro%2C%2012%20-%20Jardim%20da%20Represa%20do%20Cipo%2C%20Embu-Gua%C3%A7u%20-%20SP%2C%2006900-000!5e0!3m2!1spt-BR!2sbr!4v1708466237241!5m2!1spt-BR!2sbr" 
-        width="1180" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: <span id="current-temperature">Loading...</span></p>
+            <p>Description: <span id="current-description">Loading...</span></p>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
         </section>
     </main>
     <footer>
@@ -81,6 +82,7 @@
     <script src="script/menu.js"></script>
     <script src="script/getvisitors.js"></script>
     <script src="script/links.js"></script>
+    <script src="script/weather.js"></script>
 </body>
 
 </html>
