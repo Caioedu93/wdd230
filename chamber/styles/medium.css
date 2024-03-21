@@ -187,8 +187,10 @@ li a{
 
 .wheather_info{
     display: flex;
+    align-items:flex-start;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
+    
 }
 
 .wheather_info >* {
@@ -208,7 +210,7 @@ li a{
 
 #forecast-container{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
 }
