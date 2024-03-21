@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
             weatherIcon.setAttribute('src', iconUrl);
         });
 
+    // Create the title "Three-Day Forecast"
+    const forecastTitle = document.createElement('h3');
+    forecastTitle.textContent = 'Three-Day Forecast :';
+    forecastContainer.appendChild(forecastTitle);
+
     // Fetch 3-day forecast
     fetchWeatherData(`${apiUrl}forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
         .then(data => {
@@ -56,5 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 forecastContainer.appendChild(forecastItem);
             });
         });
-    })
-
+});

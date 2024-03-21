@@ -13,7 +13,7 @@
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
     --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
     --paragraph-background-color: #b5c6e0 ;
-    --nav-link-color: #22577a;
+    --nav-link-color: #000000;
     --nav-background-color: #b5c6e0;
     --nav-hover-link-color: #22577a;
     --nav-hover-background-color: #c7f9cc;
@@ -27,6 +27,17 @@ body {
     margin: 0;
     padding: 0;
 }
+#menu li{
+    border-radius: 5%;
+    border-color: #5c81b7;
+    border-width: 100%;
+    background-size: 36rem;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  #menu li:hover {
+    background-color: #93b0b4;
+  }
 
 #menu a{
     font-size: x-large;
@@ -40,7 +51,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px; 
+    margin-top: auto;
 }
 
 #windchill-form label,
@@ -49,6 +60,11 @@ body {
     margin-bottom: 10px;
 }
 
+
+#windchill-form input,
+#windchill-form button{
+    box-shadow: 5px 5px 10px #6f7364;
+}
 #result {
     text-align: center;
     margin-top: 20px;
@@ -69,15 +85,21 @@ header {
     font-family: 'Rubik Doodle Shadow', system-ui;
     text-align: center;
     background-color: #ebf4f5;
+    border: 8px solid #93b0b4(16, 49, 121, 0.75);
+    box-shadow: 5px 5px 10px #6f7364;
     color: #000000;
-    padding: 20px;
+    padding: 6px;
     margin-bottom: 10px;
     font-size: x-large;
 }
 
-#weatherapi-weather-widget-4{
-    margin-bottom: 100px ;
+header img {
+    border-radius: 5%;
+    max-width: 250px;
+    padding: 0%;
+    margin: 0%;
 }
+
  #cta button {
     display: block;
     width: 200px; 
@@ -103,6 +125,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 90px;
+
 }
 
 .event,
@@ -110,12 +133,16 @@ button:hover {
     width: 250px; 
     text-align: center;
     margin: 20px;
-}
+    font-family:'Rubik Doodle Shadow', system-ui;
+    color: #000000;
+} 
 
 .event img{
     max-width: 100%;
     height: 300px;
     border-radius: 10px;
+    border: 10px solid #93b0b4;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 
@@ -125,20 +152,14 @@ button:hover {
     border-radius: 10px;
 }
 
-.event legend,
-.company-card legend {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
- 
-
 h3, h1 {
     font-family: 'Rubik Doodle Shadow', system-ui;
     margin-bottom: 10px;
     font-size: xx-large;
     text-align: center;
+     font:bolder;
 }
+
 h2{
     padding-left: 20px;
 }
@@ -154,6 +175,8 @@ h2{
 
 li a{
     font-size: x-large;
+    color: black;
+
 }
 
 #hamburger {
@@ -162,21 +185,37 @@ li a{
     cursor: pointer;
 }
 
+.wheather_info{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+}
+
+.wheather_info >* {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .weather{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+      
 }
 
 #forecast-container{
     display: flex;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
 }
 
 #banner-container {
-    background-color: #b5d8e9;
-    color: #333;
+    background-color: #93b0b4;
+    color: #000000;
     font-family: 'Rubik Doodle Shadow', system-ui;
     padding: 20px;
     border-radius: 5px;
@@ -257,19 +296,6 @@ main img {
 	box-shadow: 0 0 15px #777;
 }
 
-#mode {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 3rem;
-	cursor: pointer;
-	font-size: 1.5rem;
-}
-
-body.dark-mode {
-    color: #fff; 
-    background-color: #333; 
-}
 
 form {
     display: flex;
@@ -318,8 +344,13 @@ form textarea {
     resize: vertical;
 }
 
+.wf3{
+   
+}
+
 .wf3 input:required{
     border-bottom: solid 8px red;
+     box-shadow: 5px 5px 10px #6f7364;
 }
 .wf3 input:required:valid{
     border-bottom: solid 8px green;
@@ -336,6 +367,7 @@ form button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     max-width: 400px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 form button[type="submit"]:hover {

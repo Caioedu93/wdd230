@@ -31,6 +31,17 @@ body {
     padding: 0;
 }
 
+#menu li{
+    border-radius: 5%;
+    border-color: #5c81b7;
+    border-width: 100%;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  #menu li:hover {
+    background-color: #93b0b4;
+  }
+
 #menu a {
     font-size: x-large;
 }
@@ -72,10 +83,19 @@ header {
     font-family: 'Rubik Doodle Shadow', system-ui;
     text-align: center;
     background-color: #ebf4f5;
+    border: 8px solid #93b0b4(16, 49, 121, 0.75);
+    box-shadow: 5px 5px 10px #6f7364;
     color: #000000;
-    padding: 20px;
+    padding: 6px;
     margin-bottom: 10px;
     font-size: x-large;
+}
+
+header img {
+    border-radius: 5%;
+    max-width: 250px;
+    padding: 0%;
+    margin: 0%;
 }
 
 #weatherapi-weather-widget-4{
@@ -102,7 +122,9 @@ h2{
 }
 
 li a{
+    font-family:'Rubik Doodle Shadow', system-ui;
     font-size: x-large;
+    color: #000000;
 }
 
 #hamburger {
@@ -120,6 +142,8 @@ li a{
 .sidebar {
     background-color: #f0f0f0;
     padding: 20px;
+    border-radius: 2%;
+    height: min-content;
 }
   
 .sidebar-content {
@@ -208,7 +232,7 @@ body.dark-mode {
 }
 
 /* Reset CSS */
-.directory.* {
+.directory * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -227,14 +251,14 @@ body.dark-mode {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    text-align: center; /* Center the text content */
+    text-align: center; 
 }
 
 .member-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px #6f7364;
     width: 300px;
 }
 
