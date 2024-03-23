@@ -27,10 +27,13 @@ body {
     margin: 0;
     padding: 0;
 }
-#menu li{
-    border-radius: 5%;
+
+img{
+    object-fit:inherit;
+}
+#menu li {
+    border-radius: 8%;
     border-color: #5c81b7;
-    border-width: 100%;
     background-size: 36rem;
     transition-property: background-color;
     transition-duration: 0.3s;
@@ -43,7 +46,11 @@ body {
     font-size: x-large;
 }
 #hero-image{
-    object-fit: cover;
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin:inherit; 
+    padding: 0 -2px;
 }
 
 #windchill-form {
@@ -76,16 +83,16 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration:double;
     color: black;
     font-weight: bold;
 }
 
-header {
+header{
     font-family: 'Rubik Doodle Shadow', system-ui;
     text-align: center;
     background-color: #ebf4f5;
-    border: 8px solid #93b0b4(16, 49, 121, 0.75);
+    border: 8px solid rgba(16, 49, 121, 0.75);
     box-shadow: 5px 5px 10px #6f7364;
     color: #000000;
     padding: 6px;
@@ -215,6 +222,13 @@ li a{
     justify-content: center;
 }
 
+#windchill-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #banner-container {
     background-color: #93b0b4;
     color: #000000;
@@ -325,7 +339,7 @@ form input[type="tel"],
 form textarea,
 form select {
     width: 70%;
-    padding: 0,5rem;
+    padding: 5rem;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
